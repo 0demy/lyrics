@@ -1,12 +1,8 @@
 ---
-title: বন্ধুর পথে বন্ধু হয়ে হাতটা ধরেছিলে
-title1: অগোচরে
-composer: মুহাম্মাদ শাফায়েত
+title: প্রশ্ন
+band: অর্ক
 title_en: Bondhur Pothe Bondhu Hoye
-lyric: পথিক নবী
-singer: "তাহসান, মিথিলা"
-ylink: 
-slink: 
+singer: হাসান
 ---
 বন্ধুর পথে বন্ধু হয়ে হাতটা ধরেছিলে
 মিথ্যে এ বাঁধনে আমার হয়েছিলে
