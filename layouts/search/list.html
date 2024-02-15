@@ -42,7 +42,7 @@
 		let pages;
 
 		// Load the index.json file
-		$.getJSON("/index.json", function (data) {
+		$.getJSON("{{ .Site.BaseURL }}index.json", function (data) {
 			pages = data;
 		});
 
