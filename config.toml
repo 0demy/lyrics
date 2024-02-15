@@ -1,4 +1,4 @@
-baseURL = "https://zerodemy.com/lyrics"
+baseURL = "https://zerodemy.com/"
 title = "Zerodemy Lyrics"
 languageCode = "bn-BD"
 DefaultContentLanguage = "en"
