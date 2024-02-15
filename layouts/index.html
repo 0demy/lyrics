@@ -1,0 +1,17 @@
+{{ define "main" }}
+
+<div class="container">
+	{{if .Site.Home.Content }}
+	<div class="container my-5">
+        <div class="row row-cols-lg-4 row-cols-md-3 row-cols-sm-2 row-cols-1 gy-sm-4 gy-3 pt-sm-3">
+			{{ range .Paginator.Pages }}
+			{{ partial "single.html" . }}
+			{{ end }}
+        </div>
+        <hr class="mt-4 mb-3">
+		<div>{{ template "_internal/pagination.html" . }}</div>
+      </div>
+	{{else}} No HomePage
+</div>
+{{ end }}
+{{ end }}

@@ -1,0 +1,5 @@
+{{- $.Scratch.Add "searchIndex" slice -}}
+{{- range .Site.RegularPages -}}
+    {{- $.Scratch.Add "searchIndex" (dict "title" .Title "author" .Params.author "class" .Params.class "ayear" .Params.ayear "thumb" .Params.thumb "url" .Permalink "content" .Content "publisher" .Params.publisher ) -}}
+{{- end -}}
+{{- $.Scratch.Get "searchIndex" | jsonify -}}

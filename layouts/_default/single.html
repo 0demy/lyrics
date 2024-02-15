@@ -1,0 +1,23 @@
+{{ define "main" }}
+<div style="height: auto !important;">
+    <div class="bg-faded-info py-5">
+        <div class="py-5 container">
+            <h1 class="mb-3" itemprop="name">{{ .Title }}</h1>
+            {{ if isset .Params "lyric" }}
+            <h3 class="mt-4 mb-1 text-body fw-light">গীতিকার: {{ .Params.lyric }}</h3>
+            {{ end }}
+            {{ if isset .Params "composer" }}<h6>সুরকার: {{ .Params.composer }}</h6>{{ end }}
+            {{ partial "sharethis.html" . }}
+        </div>
+    </div>
+    <div class="container">
+        <div class="bg-light shadow-lg rounded-3" style="margin-top: -4.875rem;">
+            <div class="px-4 pt-lg-3 pb-3 mb-5">
+                <div class="px-lg-3"  style="font-size: 1.5rem;">
+                    <div class="text-center pt-5">{{ .Content }}</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{{ end }}
