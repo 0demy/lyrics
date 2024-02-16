@@ -6,7 +6,7 @@
             {{ if isset .Params "lyric" }}
             <h3 class="mt-4 mb-1 text-body fw-light">গীতিকার: {{ .Params.lyric }}</h3>
             {{ end }}
-            {{ if isset .Params "composer" }}<h6>সুরকার: {{ .Params.composer }}</h6>{{ end }}
+            {{ if isset .Params "singer" }}<h6>কণ্ঠ: {{ .Params.singer }}</h6>{{else if isset .Params "composer" }}<h6>সুরকার: {{ .Params.composer }} </h6>{{ end }}
             {{ partial "sharethis.html" . }}
         </div>
     </div>

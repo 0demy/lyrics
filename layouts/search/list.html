@@ -3,7 +3,6 @@
 	<div class="container pt-2 pb-3 pt-lg-3 pb-lg-4">
 		<h1 class="h3 text-light mb-0">{{ .Title }}</h1>
 	</div>
-
 </div>
 <div class="container pb-5 mb-2 mb-md-4">
 	<!-- Toolbar-->
@@ -38,32 +37,34 @@
 		const input = $("#search-input");
 		const select = $("#search-select");
 		const results = $("#search-results");
-
+	
 		let pages;
-
+	
 		// Load the index.json file
 		$.getJSON("/index.json", function (data) {
 			pages = data;
+			// Call searchPages after loading data
+			searchPages();
 		});
-
+	
 		// Event listener for input changes
 		input.on("input", function () {
 			searchPages();
 		});
-
+	
 		// Event listener for select changes
 		select.on("change", function () {
 			searchPages();
 		});
-
+	
 		// Function to search pages based on selected parameter
 		function searchPages() {
 			const query = input.val().toLowerCase().trim();
 			const selectedParam = select.val();
-
+	
 			// Clear previous search results
 			results.empty();
-
+	
 			if (query !== "") {
 				// Filter pages based on the selected parameter
 				const filteredPages = pages.filter(function (page) {
@@ -80,7 +81,7 @@
 					const workTitle = $("<h4>").addClass("product-title mb-2").text(page.title);
 					const gitkar = $("<span>").addClass("product-title mb-2 fs-base").text("গীতিকার: " + page.lyric);
 					const gayok = $("<span>").addClass("product-title mb-2 fs-base").text("গায়ক: " + page.singer);
-					{{/*  const band = $("<span>").addClass("product-title mb-2 fs-base").text("ব্যান্ড: " + page.band);  */}}
+					// const band = $("<span>").addClass("product-title mb-2 fs-base").text("ব্যান্ড: " + page.band);
 					workTitleLink.append(workTitle, lineBreak, gitkar, lineBreak, gayok);
 					divCardBody.append(workTitleLink);
 					divCardh100.append(divCardBody);
