@@ -1,5 +1,6 @@
 ---
 title: প্রশ্ন
+magnet: "তুমি নিজে নিজে প্রশ্ন করে দেখো"
 band: অর্ক
 title_en: Bondhur Pothe Bondhu Hoye
 singer: হাসান

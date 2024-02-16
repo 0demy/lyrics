@@ -1,8 +1,9 @@
 ---
-title: বন্ধুর পথে বন্ধু হয়ে হাতটা ধরেছিলে
-title1: অগোচরে
-composer: মুহাম্মাদ শাফায়েত
-title_en: Bondhur Pothe Bondhu Hoye
+title: "অগোচরে"
+title_en: "Ogochore"
+magnet: "বন্ধুর পথে বন্ধু হয়ে হাতটা ধরেছিলে"
+composer: "মুহাম্মাদ শাফায়েত"
+magner_en: "Bondhur Pothe Bondhu Hoye"
 lyric: "পথিক নবী"
 singer: "তাহসান, মিথিলা"
 ---

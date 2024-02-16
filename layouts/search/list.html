@@ -41,7 +41,7 @@
 		let pages;
 	
 		// Load the index.json file
-		$.getJSON("{{ .Site.BaseURL }}index.json", function (data) {
+		$.getJSON("/index.json", function (data) {
 			pages = data;
 			// Call searchPages after loading data
 			searchPages();
@@ -91,5 +91,6 @@
 			}
 		}
 	});
+	
 </script>
 {{ end}}
