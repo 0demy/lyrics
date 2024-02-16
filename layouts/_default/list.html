@@ -13,13 +13,7 @@
             </div>
         </div>
         {{ end }}
-        {{ range .Sections }}
-        <div class="col-md-6 col-xl-3 p-1">
-            <div class="card bg-faded-info p-3">
-                <h2><a class="cat" href="{{ .Permalink }}">{{ .Title }}</a></h2>
-            </div>
-        </div>
-        {{ end }}
+        {{ partial "section.html"}}
     </div>
 
     {{ if gt (len .RegularPages) 0 }} <h2></h2>{{ end }}
