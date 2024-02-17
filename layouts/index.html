@@ -1,6 +1,5 @@
 {{ define "main" }}
-
-<div class="container">
+<section class="container">
 	{{if .Site.Home.Content }}
 	<div class="row my-3">
 		{{ if gt (len .Sections) 0 }}
@@ -27,6 +26,6 @@
 		<div class="d-flex aligns-items-center justify-content-center">{{ template "_internal/pagination.html" . }}</div>
 	</div>
 	{{else}} No HomePage
-</div>
+</section>
 {{ end }}
 {{ end }}

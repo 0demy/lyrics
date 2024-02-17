@@ -311,15 +311,6 @@ button:not(:disabled),
     margin-left: calc(-0.5*var(--cz-gutter-x))
 }
 
-.row>* {
-    flex-shrink: 0;
-    width: 100%;
-    max-width: 100%;
-    padding-right: calc(var(--cz-gutter-x)*.5);
-    padding-left: calc(var(--cz-gutter-x)*.5);
-    margin-top: var(--cz-gutter-y)
-}
-
 .col {
     flex: 1 0 0%
 }

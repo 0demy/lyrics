@@ -1,8 +1,8 @@
 baseURL = "https://zerodemy.com/"
 title = "Zerodemy Lyrics"
 languageCode = "bn-BD"
-DefaultContentLanguage = "en"
-defaultContentLanguage = "en"
+DefaultContentLanguage = "bn"
+defaultContentLanguage = "bn"
 defaultContentLanguageInSubdir= false
 enableMissingTranslationPlaceholders = false
 
@@ -12,11 +12,6 @@ paginate = 10
 googleAnalytics = ""
 
 [params]
-ordersectionsby = "weight" # ordersectionsby = "title"
-disableSearch = false # default is false
-disableReadmoreNav = false # set true to hide prev/next navigation, default is false
-highlightClientSide = false # set true to use highlight.pack.js instead of the default hugo chroma highlighter
-menushortcutsnewtab = true # set true to open shortcuts links to a new tab/window
 subtitle = "Collection of Bengali Lyrics"
 subtitle_bn = "বাংলা লিরিক্সের সংগ্রহশালা"
 title_bn = "জিরোডেমি লিরিক্স"
