@@ -1,0 +1,17 @@
+baseURL = "https://zerodemy.com"
+languageCode = "bn-BD"
+DefaultContentLanguage = "bn"
+defaultContentLanguage = "bn"
+defaultContentLanguageInSubdir= false
+enableMissingTranslationPlaceholders = false
+
+# Enable Google Analytics by entering your tracking id
+googleAnalytics = ""
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+
+[outputs]
+  home = [ "HTML", "RSS", "JSON"]

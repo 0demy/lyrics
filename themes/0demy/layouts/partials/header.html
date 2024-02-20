@@ -1,0 +1,29 @@
+<header class="bg-light shadow-sm navbar-sticky">
+    <div class="navbar navbar-expand-lg navbar-light">
+        <div class="container">
+            <a class="navbar-brand me-4 order-lg-1" href="{{ .Site.BaseURL | relLangURL }}">
+                <div class="navbar-tool-text ms-n3 d-block">
+                    <span class="fw-bold">{{ .Site.Params.siteName }}</span><br>
+                    <span>{{ .Site.Params.siteSubTitleBN }}</span>
+                </div>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            {{- if not (in .RelPermalink "/search/") -}}<div class="navbar-toolbar order-lg-3 navbar-toolbar d-flex align-items-center">
+                <form action="{{ .Site.Params.siteURL}}search/" method="get"
+                    class="input-group">
+                    <input autocomplete="on" class="search-input form-control rounded-start" name="q"
+                        placeholder="{{ .Site.Params.searchText }}" type="text" value="">
+                    <button class="input-group-text btn btn-accent btn-sm"><i class="bi bi-search"></i></button>
+                </form>
+            </div>{{- end -}}
+            <div class="collapse navbar-collapse me-auto order-lg-2" id="navbarCollapse">
+                <hr class="my-3">
+                <ul class="navbar-nav">
+                    {{ partial "nav/topnav.html" . }}
+                </ul>
+            </div>
+        </div>
+    </div>
+</header>

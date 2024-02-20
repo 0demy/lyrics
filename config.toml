@@ -1,27 +1,13 @@
-baseURL = "https://zerodemy.com/"
 title = "Zerodemy Lyrics"
-languageCode = "bn-BD"
-DefaultContentLanguage = "bn"
-defaultContentLanguage = "bn"
-defaultContentLanguageInSubdir= false
-enableMissingTranslationPlaceholders = false
-
 paginate = 10
 
-# Enable Google Analytics by entering your tracking id
-googleAnalytics = ""
-
 [params]
-subtitle = "Collection of Bengali Lyrics"
-subtitle_bn = "বাংলা লিরিক্সের সংগ্রহশালা"
-title_bn = "জিরোডেমি লিরিক্স"
-site_logo = "https://books.zerodemy.com/images/logo temporary.png"
-
-[markup]
-  [markup.goldmark]
-    [markup.goldmark.renderer]
-      unsafe = true
-      hardWraps = true
-
-[outputs]
-home = [ "HTML", "RSS", "JSON"]
+  siteSubTitle = "Collection of Bengali Lyrics"
+  siteSubTitleBN = "বাংলা লিরিক্সের সংগ্রহশালা"
+  mainURL = "https://zerodemy.com/"
+  siteURL = "https://books.zerodemy.com/"
+  siteName = "জিরোডেমি লিরিক্স"
+  siteNames = [ "জিরোডেমি লিরিক্স", "ZeroLyrics", "0dmey Lyrics" ]
+  siteLang = "bn-BD"
+  siteLogo = "https://zerodemy.com/dist/img/logo%20temporary.png"
+  searchText = "লিরিক্স খুঁজুন"
