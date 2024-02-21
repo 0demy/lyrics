@@ -14,6 +14,9 @@
 <meta name="description" content="{{ partial "seo/description.html" . }}">
 {{/*  CSS/Links/StyleSheets  */}}
 <link rel="canonical" href="{{ .Permalink }}">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Bengali:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 {{/*  <link href='https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/css/bootstrap.css' rel='stylesheet' />  */}}
 <link rel="stylesheet" href="{{ .Site.Params.mainURL }}dist/css/common.css">
@@ -22,15 +25,6 @@
 <script src='{{ .Site.Params.mainURL }}dist/js/jquery-v3.6.3.min.js'></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 <script src="{{ .Site.Params.mainURL }}dist/js/common.js"></script>
-<script src='https://www.metype.com/quintype-metype/assets/metype.js'></script>
-<script type='text/javascript'>
-  window.talktype = window.talktype || function (f) {
-    if (talktype.loaded)
-      f();
-    else
-      (talktype.q = talktype.q || []).push(arguments);
-  };
-</script>
 {{/*  Only include the tracking when using `hugo` or adding `--environment production`  */}}
 {{- if eq hugo.Environment "production" }}
 {{ template "_internal/google_analytics_async.html" . }}

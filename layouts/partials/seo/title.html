@@ -1,0 +1,3 @@
+{{- block "title" . -}}
+{{ .Title}}{{if isset .Params "class"}} {{.Params.class}}{{ end }}{{ if isset .Params "ayear"}} {{.Params.ayear}} শিক্ষাবর্ষ{{ end }} {{if eq .Kind "page" }}(PDF/EPUB) {{ end }} 
+{{- end -}}

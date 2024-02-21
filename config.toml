@@ -1,7 +1,9 @@
 title = "Zerodemy Lyrics"
 paginate = 10
+theme = "0demy"
 
 [params]
+  orgName = "ZeroDemy"
   siteSubTitle = "Collection of Bengali Lyrics"
   siteSubTitleBN = "বাংলা লিরিক্সের সংগ্রহশালা"
   mainURL = "https://zerodemy.com/"
@@ -11,3 +13,10 @@ paginate = 10
   siteLang = "bn-BD"
   siteLogo = "https://zerodemy.com/dist/img/logo%20temporary.png"
   searchText = "লিরিক্স খুঁজুন"
+  gsc= "https://cse.google.com/cse.js?cx=47842207939cb40c0"
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+      hardWraps = true
